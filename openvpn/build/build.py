@@ -225,7 +225,7 @@ def build_openvpn_windows():
 # Process command line arguments.
 parser = argparse.ArgumentParser(description="Build PQCrypto-VPN.")
 
-parser.add_argument("--skip-windows", dest='skip_windows', action='store_true', default=False)
+parser.add_argument("--skip-windows", dest='skip_windows', action='store_true', default=True)
 parser.add_argument("--skip-linux", dest='skip_linux', action='store_true', default=False)
 # This argument only builds a debug version for Linux. We don't yet have support for building a debug version for Windows.
 parser.add_argument("--debug", dest='build_debug', action='store_true', default=False)
