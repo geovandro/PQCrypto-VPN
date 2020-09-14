@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y \
         ninja-build
         
 RUN cd /opt && \
-        git clone -b PQCrypto-1.3 --recurse-submodules https://github.com/geovandro/PQCrypto-VPN.git || true
+        git clone --recurse-submodules https://github.com/geovandro/PQCrypto-VPN.git || true
 
 RUN cd /opt/PQCrypto-VPN/openvpn/build && python build.py
 
